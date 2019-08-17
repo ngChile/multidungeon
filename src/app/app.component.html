@@ -1,21 +1,32 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="dungeon" [style.backgroundImage]="'url(' + dungeon?.background_url +')'" [style.backgroundPosition]="'50% 50%'" [style.backgroundSize]="'cover'">
+  <div class="nes-container is-rounded">
+    <p class="nes-text is-primary centered">{{dungeon?.name}}</p>
+  </div>
 
-<router-outlet></router-outlet>
+  <!-- MONSTER -->
+  <div class="monster_container">
+    <div class="inner">
+      <div class="left">
+        <img [src]="monster?.image_url" alt="">
+      </div>
+      <div class="right">
+        <div class="nes-container is-rounded title_container">
+          <h1 class="nes-text is-error">Oh No!</h1>
+          <h3>A monster appeared!</h3>
+        </div>
+        <div class="nes-container is-rounded title_container">
+          <p class="nes-text centered">{{monster?.name}}</p>
+        </div>
+        <div class="nes-container is-rounded with-title stats_container">
+          <p class="title">Stats</p>
+          <ul>
+            <li><span class="nes-text is-primary">Health</span>: {{monster?.health}}</li>
+            <li><span class="nes-text is-primary">Attack</span>: {{monster?.attack}}</li>
+            <li><span class="nes-text is-primary">Defense</span>: {{monster?.defense}}</li>
+          </ul>
+        </div>
+        <button type="button" class="nes-btn is-warning">Fight!? Are you insane? Is a f*cking monster. Run man! Run fast as you can!</button>
+      </div>
+    </div>
+  </div>
+</div>

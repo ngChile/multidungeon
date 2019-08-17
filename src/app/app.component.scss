@@ -1,0 +1,33 @@
+.dungeon {
+  height: 100%;
+  padding: 2rem;
+}
+
+.monster_container {
+  .inner {
+    display: flex;
+    .left {
+      flex-basis: 0;
+      flex-grow: 1;
+      img {
+        width: 100%;
+        height: auto;
+        image-rendering: pixelated;
+      }
+    }
+    .right {
+      flex-grow: 1;
+      flex-basis: 0;
+
+      .title_container {
+        margin-top: 2rem;
+        font-size: 2rem;
+      }
+
+      .stats_container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

@@ -1,27 +1,41 @@
-# Multidungeon
+# Multi Dungeon: Aplicaciones multitenant en Angular. Un ejemplo con RPG
+> Multi Dungeon es una pequeña aplicación desarrollada por [@nicoavila](https://github.com/nicoavila), organizador de la comunidad [Angular Chile](https://twitter.com/angularChile) para la charla **"Aplicaciones Multitenant en Angular con AWS y Cloud Firestore"** realizada en la [Globant Development Week Santiago 2019](https://devweekchile.com/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+![Multi Dungeon](https://nicoavila.s3.us-west-2.amazonaws.com/angular-chile/multidungeon-background.png)
 
-## Development server
+Para empezar visita [https://multidungeon.site](https://multidungeon.site). Serás redireccionado automáticamente a los *"Pantanos del Enrutador"*. Puedes navegar diréctamente a algunos *dungeons* visitando: [Module Ruins](https://ruins.multidungeon.site), [Dependency Injection Dungeon](https://dungeon.multidungeon.site) y [Router Swamps](https://swamp.multidungeon.site) 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## :scroll: Introducción
+(TO-DO)
 
-## Code scaffolding
+## :woman: ¿Qué es un Tenant?
+(TO-DO)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## :family: ¿Qué es Multi Tenancy?
+(TO-DO)
 
-## Build
+## :mag: ¿Cómo funciona?
+![preview](https://placehold.it/800x600)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1. (TO-DO)
+2. (TO-DO)
+3. (TO-DO)
+4. (TO-DO)
+5. (TO-DO)
 
-## Running unit tests
+## :ballot_box_with_check: Requerimientos
+* Tener una cuenta de AWS. Será necesaria para crear los recursos que daran sustento a la aplicación
+* Tener una cuenta Google. Será necesaria para usar Firebase
+* AWS CLI. Será necesario para administrar algunos recursos en AWS. Para instalarlo en macOS utiliza `brew install awscli`
+* Certbot. Será necesario para generar certificados SSL que usaremos en nuesetra aplicación. Para instalarlo en macOS utiliza `brew install certbot`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## :mega: Slides
+Las slides de la presentación pueden encontrarlas aquí
 
-## Running end-to-end tests
+## :page_with_curl: Bibliografía
+* Bustamante W. Multi - Tenancy. INNOVA Research Journal, Vol 2, No. 2, 72 - 83.
+* Krebs R, Momm C, Kounev S. Architectural Concerns in Multi-Tenant SaaS Applications. Recuperado el 10 de Agosto del 2019 de [https://se2.informatik.uni-wuerzburg.de/pa/uploads/papers/paper-371.pdf](https://se2.informatik.uni-wuerzburg.de/pa/uploads/papers/paper-371.pdf)
+* H. AlJahdali, A. Albatli, P. Garraghan, P. Townend, L. Lau and J. Xu, "Multi-tenancy in Cloud Computing," 2014 IEEE 8th International Symposium on Service Oriented System Engineering, Oxford, 2014, pp. 344-351. doi: 10.1109/SOSE.2014.50
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## :milky_way: Recursos gráficos
+(TO-DO)

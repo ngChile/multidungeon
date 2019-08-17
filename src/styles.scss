@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+  height: 100%;
+  body {
+    padding: 0px;
+    margin: 0px;
+    height: inherit;
+  }
+}
+
+#nescss > .container {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.nes-container {
+  background: #FFFFFF;
+}
+
+.centered {
+  text-align: center;
+}
